@@ -164,30 +164,41 @@
                 </ul>
             </li>
 
-            
+                 
 
-
-            <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
+                                      <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
                 <i class="fas fa-file-alt"></i>
                 <span class="nav-text">Crédits</span>
                 
             </a>
             <ul aria-expanded="false">
                
-                <li><a href="credit.html">Liste des crédits</a></li>
-                <li><a href="demande_credit_table.html">Liste des demandes crédits</a></li>
-                <li><a href="demande_credit.html">demander credit</a></li>
-                <li><a href="suivre_credit.html">suivre mon demande</a></li>
+                <li><a href="{{path('app_listecredit')}}">Liste des crédits</a></li>
+                <li><a href="{{path('app_listerdv')}}">Liste des rdv</a></li>
+                <li><a href="{{path('app_demandecredit')}}">demander credit</a></li>
+                <li><a href="{{path('app_suivrecredit')}}">suivre mon demande</a></li>
             </ul>
         </li>
 
                 <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
                     <i class="fas fa-chart-line"></i>
-                    <span class="nav-text">Investissements</span>
+                    <span class="nav-text">Investissement</span>
                 </a>
                 <ul aria-expanded="false">
                     
-                    <li><a href="project-page.html">Projets</a></li>
+                    <li><a  href="{{ path('app_investissement') }}">Liste des investissements</a></li>
+                    <li><a  href="{{ path('app_evenment') }}">Liste des événements</a></li>
+
+                </ul>
+
+             </li>
+              <li><a class="has-arrow " href="javascript:void()"aria-expanded="false">
+                  <i class="bi bi-clipboard-data-fill"></i>
+                    <span class="nav-text">Projet</span>
+                </a>
+                <ul aria-expanded="false">
+                    
+                    <li><a  href="{{ path('app_project') }}">Liste des projets</a></li>
                         
                 </ul>
 
