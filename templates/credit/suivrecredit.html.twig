@@ -1,0 +1,123 @@
+{% extends 'base.html.twig' %}
+
+    {% block body %}
+        <!-- Required vendors -->
+    <script src="vendor/global/global.min.js"></script>
+    <script src="vendor/chart.js/Chart.bundle.min.js"></script>
+	<script src="vendor/lightgallery/js/lightgallery-all.min.js"></script>
+	<script src="vendor/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="js/custom.min.js"></script>
+	<script src="js/dlabnav-init.js"></script>
+	<script src="js/demo.js"></script>
+    <script>
+		$('#lightgallery').lightGallery({
+			thumbnail:true,
+		});
+	</script>
+    <div class="content-body">
+        <div class="container-fluid">
+            <div class="row page-titles">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active"><a href="javascript:void(0)">Advanced</a></li>
+                    <li class="breadcrumb-item"><a href="javascript:void(0)">Post Details</a></li>
+                </ol>
+            </div>
+            <!-- row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="profile card card-body px-3 pt-3 pb-0">
+                        <div class="profile-head">
+                            <div class="photo-content">
+                                <div class="cover-photo rounded"></div>
+                            </div>
+                            <div class="profile-info">
+                                <div class="profile-photo">
+                                    <img src="images/profile/profile.png" class="img-fluid rounded-circle" alt="">
+                                </div>
+                                <div class="profile-details">
+                                    <div class="profile-name px-3 pt-2">
+                                        <h4 class="text-primary mb-0">Soeng Souy</h4>
+                                        <p>UX / UI Designer</p>
+                                    </div>
+                                    <div class="profile-email px-2 pt-2">
+                                        <h4 class="text-muted mb-0">hello@email.com</h4>
+                                        <p>Email</p>
+                                    </div>
+                                    <div class="dropdown ms-auto">
+                                        <a href="#" class="btn btn-primary light sharp" data-bs-toggle="dropdown" aria-expanded="true"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewbox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg></a>
+                                        <ul class="dropdown-menu dropdown-menu-end">
+                                            <li class="dropdown-item"><i class="fa fa-users text-primary me-2"></i><a href="s">suivre mon rendez vous</a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+                <!-- Displaying attributes throughout the page -->
+                <div class="col-xl-8">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="profile-statistics">
+                                        <div class="text-center">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h3 class="m-b-0">id_client</h3><span>12400</span>
+                                                </div>
+                                                <div class="col">
+                                                    <h3 class="m-b-0">montant</h3><span>refuse</span>
+                                                </div>
+                                                <div class="col">
+                                                    <h3 class="m-b-0">montant_restant</h3><span>mensualite insu</span>
+                                                </div>
+                                                <div class="col">
+                                                    <h3 class="m-b-0">date_d</h3><span>mensualite insu</span>
+                                                </div>
+                                                <div class="col">
+                                                    <h3 class="m-b-0">status</h3><span>mensualite insu</span>
+                                                </div>
+                                                <div class="col-xl-6 col-lg-12">
+                                                    <div class="card">
+                                                        <div class="card-header">
+                                                            <h4 class="card-title">Horizontal bar chart</h4>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <div id="horizontal-bar-chart" class="ct-chart ct-golden-section chartlist-chart"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more sections as needed -->
+            </div>
+        </div>
+    </div>
+    <!--charts box-->
+   
+       <!-- Chart Chartist plugin files -->
+       <script src="vendor/chartist/js/chartist.min.js"></script>
+       <script src="vendor/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+       <script src="vendor/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+       <script src="js/plugins-init/chartist-init.js"></script>
+     <!-- Required vendors -->
+     <script src="vendor/global/global.min.js"></script>
+     <script src="vendor/chart.js/Chart.bundle.min.js"></script>
+     <!-- Apex Chart -->
+     <script src="vendor/apexchart/apexchart.js"></script>
+       <script src="js/custom.min.js"></script>
+       <script src="js/dlabnav-init.js"></script>
+       <script src="js/demo.js"></script>
+       <script src="js/styleSwitcher.js"></script>
+    {% endblock %}
+    
+    

@@ -1,0 +1,97 @@
+{% extends 'base.html.twig' %}
+<!--g>
+    {% block body %}
+        <body class="vh-100">
+          <div class="authincation h-100">
+            <div class="container h-100">
+              <div class="row justify-content-center h-100 align-items-center">
+                <div class="col-md-6">
+                  <div class="authincation-content">
+                    <div class="row no-gutters">
+                      <div class="col-xl-12">
+                        <div class="auth-form">
+                          <div class="text-center mb-3">
+                            <a href="index.html"
+                              ><img src="images/logo-full.png" alt=""
+                            /></a>
+                          </div>
+          <!-- Formulaire pour ajouter une demande de crédit -->
+          <form action="create_demande_credit.php" method="POST">
+            <div class="mb-3">
+              <label class="mb-1"
+                ><strong>ID rendez_vous</strong></label
+              >
+              <input
+                type="number"
+                class="form-control"
+                name="id_demande"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label class="mb-1"><strong>ID Client</strong></label>
+              <input
+                type="number"
+                class="form-control"
+                name="id_client"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label class="mb-1"><strong>date</strong></label>
+              <input
+                type="number"
+                step="0.01"
+                class="form-control"
+                name="montant"
+                id="montant"
+                required
+                oninput="calculerFraisTaux()"
+              />
+            </div>
+            <div class="mb-3">
+              <label class="mb-1"><strong>heure</strong></label>
+              <input
+                type="text"
+                class="form-control"
+                name="status_client"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label class="mb-1"><strong>Méthode</strong></label>
+              <select class="form-select" name="methode" required>
+                <option value="presentiel">Présentiel</option>
+                <option value="en_ligne">En ligne</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label class="mb-1"
+                ><strong>nom_employee</strong></label
+              >
+              <input
+                type="date"
+                class="form-control"
+                name="date_debut"
+                required
+              />
+            </div>
+
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary btn-block">
+                Ajouter un rendez_vous
+              </button>
+            </div>
+          </form>
+          <!-- Fin du formulaire pour ajouter une demande de crédit -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+     
+    {% endblock %}
