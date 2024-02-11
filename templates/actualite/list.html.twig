@@ -1,0 +1,126 @@
+{% extends 'base.html.twig' %}
+
+        {% block body %}
+        
+<div class="content-body">
+            <div class="container-fluid">
+
+                <!-- row -->
+
+                <div class="row">
+
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Liste des Articles</h4>
+                                <div class="mb-4">
+                                    <a href="AjouterArticle.html" class="btn btn-outline-success btn-rounded fs-18">+ Nouvel Article</a>
+                                    
+                                </div>
+                            </div>
+                            
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-responsive-md">
+                                        <thead>
+                                            <tr>
+
+                                                <th><strong>ID</strong></th>
+                                                <th><strong>Titre</strong></th>
+                                                <th><strong>Contenu</strong></th>
+                                                <th><strong>Auteur</strong></th>
+                                                <th><strong>Date publication</strong></th>
+                                                <th><strong>Durée</strong></th>
+                                                <th><strong>Statut</strong></th>
+                                                <th><strong>Catégorie</strong></th>
+                                                <th><strong>Actions</strong></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+
+                                                <td><strong>123</strong></td>
+                                                <td>
+                                                    <div class="d-flex align-items-center"><span class="w-space-no">Coach financier</span></div>
+                                                </td>
+                                                <td>Rien a afficher </td>
+                                                <td>exemple@exemple.com </td>
+                                                <td>13 Octobre 1998</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">3 jours</div>
+                                                </td>
+                                                <td>En attente </td>
+                                                <td>Dev dur </td>
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <a href="AjouterArticle.html" class="btn btn-primary shadow btn-xs sharp me-1"><i class="bi bi-eye"> </i></a>
+                                                    
+                                                        <a href="#" class="btn btn-primary shadow btn-xs sharp me-1"><i
+                                                                class="fas fa-pencil-alt"></i></a>
+                                                        <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
+                                                                class="fa fa-trash"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+
+                                                <td><strong>789</strong></td>
+                                                <td>
+                                                    <div class="d-flex align-items-center"><span class="w-space-no">Epargne automatique</span></div>
+                                                </td>
+                                                <td>Rien a afficher </td>
+                                                <td>exemple@exemple.com </td>
+                                                <td>13 Octobre 1998</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">3 jours</div>
+                                                </td>
+                                                <td>En attente </td>
+                                                <td>Dev dur </td>
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <a href="#" class="btn btn-primary shadow btn-xs sharp me-1"><i class="bi bi-eye"> </i></a>
+                                                    
+                                                        <a href="#" class="btn btn-primary shadow btn-xs sharp me-1"><i
+                                                                class="fas fa-pencil-alt"></i></a>
+                                                        <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
+                                                                class="fa fa-trash"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+
+                                                <td><strong>456</strong></td>
+                                                <td>
+                                                    <div class="d-flex align-items-center"><span class="w-space-no">Finance</span></div>
+                                                </td>
+                                                <td>Rien a afficher </td>
+                                                <td>exemple@exemple.com </td>
+                                                <td>13 Octobre 1998</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">3 jours</div>
+                                                </td>
+                                                <td>En attente </td>
+                                                <td>Dev dur </td>
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <a href="#" class="btn btn-primary shadow btn-xs sharp me-1"><i class="bi bi-eye"> </i></a>
+                                                    
+                                                        <a href="#" class="btn btn-primary shadow btn-xs sharp me-1"><i
+                                                                class="fas fa-pencil-alt"></i></a>
+                                                        <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
+                                                                class="fa fa-trash"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        {% endblock %}
+
