@@ -168,10 +168,9 @@
                 </ul>
             </li>
 
-            
+                 
 
-
-            <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
+                                      <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
                 <i class="fas fa-file-alt"></i>
                 <span class="nav-text">Crédits</span>
                 
@@ -187,11 +186,23 @@
 
                 <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
                     <i class="fas fa-chart-line"></i>
-                    <span class="nav-text">Investissements</span>
+                    <span class="nav-text">Investissement</span>
                 </a>
                 <ul aria-expanded="false">
                     
-                    <li><a href="project-page.html">Projets</a></li>
+                    <li><a  href="{{ path('app_investissement') }}">Liste des investissements</a></li>
+                    <li><a  href="{{ path('app_evenment') }}">Liste des événements</a></li>
+
+                </ul>
+
+             </li>
+              <li><a class="has-arrow " href="javascript:void()"aria-expanded="false">
+                  <i class="bi bi-clipboard-data-fill"></i>
+                    <span class="nav-text">Projet</span>
+                </a>
+                <ul aria-expanded="false">
+                    
+                    <li><a  href="{{ path('app_project') }}">Liste des projets</a></li>
                         
                 </ul>
 
